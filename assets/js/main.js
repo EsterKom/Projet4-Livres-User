@@ -11,15 +11,15 @@ document.getElementById("item-form").addEventListener("submit", (e) => {
         description: e.target.description.value,
     }
     axios.post("http://localhost:8000/api/livres", book)
-    .then (res => {
-        //console.log(response);
+    .then(res => {
+        //console.log(res);
         if(res.data.book) {
-            getBooksFromServer();
-            e.target.title.value = " "
-            e.target.auteur.value = " "
-            e.target.description.value = " "
+            getBooks();
+            e.target.title.value = " ";
+            e.target.auteur.value = " ";
+            e.target.description.value = " ";
         } else {
-            alert("Il y a un erreur !");
+            alert('Il y a un erreur !');
         }
-     })
+     });
 })
