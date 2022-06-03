@@ -13,22 +13,52 @@
 <body>
    <header >
     <nav>
-        <a href="/" class="logo"><img src="/assets/logo.jpg"></a>
-        <ul>
-            <li><a class="active" href="index.html">accueil</a></li>
-            <li><a href="login.html">login</a></li>
-            <li><a href="about_us.html"></a></li>
+        <nav class="navbar navbar-expand-lg navbar-light background-color: "a ajouter">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div>
+                <ul class="navbar-nav mr-auto .d-flex ">
+                    <a class="navbar-brand" href="/"><img class="logo" src="/assets/logo.jpg" alt="logo MAE" Width="150" height="150" alt=""></a>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/"></a>
+                    </li>
+                    <li class="nav-item float-right">
+                      <a class="nav-link" href="#">Nouveautés</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Polar</a>
+                          <a class="dropdown-item" href="#">Jeunesse</a>
+                          <a class="dropdown-item" href="#">Santé et Bien-être</a>
+                          <a class="dropdown-item" href="#">Roman</a>
+                        </div> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+            
+        </div>  
     </nav>
-    </header>   
-    
+</header>
+<section>  
     <div class="container">
-        <img src="https://www.francetvinfo.fr/pictures/1Z6ej8EKLjZM4vpp621bnbsDTy0/752x423/2016/09/30/phpw5dLAQ_1.jpg" alt="">
-        <section id="items" class="my-3">
-   
-          <section id="items"><h3>All books</h3>
-    <div class="row" id="books_list"></div 
-  
-</section>
+     <div class="jumbotron jumbotron-fluid border bg-image">
+        <div class="hero">
+          <h1 class="display-4 text-center p-5">Bienvenu.e à MAE - votre lumière dans le jungle des livres</h1>
+          <h3 class="lead text-center">Nous sommes ici pour vous guider, vous surprendre et de vous faire rêver en dehors de vos propos limites.</h3>
+        </div>
+      </div> 
+    </div>  
+        <!-- <section id="items" class="my-3"> -->
+<div class="container">
+          <section class="items text-center"><h3>Tous nos livres</h3>
+            <div><button type="button" class="btn btn-success" id="themejeunesse">Jeunesse</button></div>
+    <div class="row border: 3px solid" id="books_list"></div 
+</section>   
             <div class="row">
     <div class="form-group">
         <label for="item-title">Title</label>
@@ -37,6 +67,7 @@
             Looks good!
           </div>
     </div>
+   <div class="container" ></div> 
     <div class="form-group">
         <label for="item-author">Auteur</label>
         <input type="text" class="form-control" id="item-author" name="author" placeholder="Ajouter le.s écrivain.e.es" required>
