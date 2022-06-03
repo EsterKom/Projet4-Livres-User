@@ -1,13 +1,28 @@
+/* .hero {
+    background-image: "https://www.francetvinfo.fr/pictures/1Z6ej8EKLjZM4vpp621bnbsDTy0/752x423/2016/09/30/phpw5dLAQ_1.jpg";
+} */
 
-*{
-    background-color: rgb(204, 50, 50);
+body {
+    background-color: #faddc2;
 }
 
-.logo img{
-    width: 90px;
+.card-body {
+    flex: 1 1 auto;
+    padding: 0.5rem 0.5rem; 
+    /* border: 2px solid orange; */
+}
+.jumbotron{
+    background-image: url(https://st.depositphotos.com/1744418/1931/i/600/depositphotos_19318773-stock-photo-book-page-in-heart-shape.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    color: white;
+   }  
+/* .logo {
+    width:150px;
     height: auto;
-}
-nav ul {
+} */
+/* nav ul {
     height: 100%;
     align-self: center;
     justify-content: space-between;
@@ -29,7 +44,7 @@ nav ul li a {
 nav ul li a:hover, .active {
     color: #C3D0E4;
     transition: 400ms ease-in;
-}
+} */
 
 footer{
     background: #FFFFFF;
